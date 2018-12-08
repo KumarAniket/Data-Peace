@@ -3,7 +3,7 @@
 # About 
  This is a task for the role of frontend developer. The application fetches data from the server and populates it in a tabluar manner. The application has features like searching, sorting in ascending and descending orders and pagination. 
 ## Installation and Running the application
-Considering that you have angular installed and running. Please follow the following steps :
+Considering that you have angular installed and running. Please follow the following steps : <br />
 Step 1 : Clone the repo <br />
 Step 2 : Change the directory to the application folder that is `cd Data-Peace` <br />
 Step 3 : Run `npm install` <br />
