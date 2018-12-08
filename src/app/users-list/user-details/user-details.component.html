@@ -1,0 +1,34 @@
+<div *ngIf="this._state.showUserDetails">
+    <table class="user_details">
+          <h1>{{userDetails.first_name}} {{userDetails.last_name}}</h1>
+      <tr>
+        <td>Company Name</td>
+        <td>{{userDetails.company_name}}</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>{{userDetails.city}}</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>{{userDetails.state}}</td>
+      </tr>
+      <tr>
+        <td>ZIP</td>
+        <td>{{userDetails.zip}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{userDetails.email}}</td>
+      </tr>
+      <tr>
+        <td>Web</td>
+        <td><a href="{{userDetails.web}}">{{userDetails.web}}</a></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>{{userDetails.age}}</td>
+      </tr>
+  
+    </table>
+  </div>

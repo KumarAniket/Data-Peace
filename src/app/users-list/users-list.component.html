@@ -1,0 +1,39 @@
+<div class="navbar">
+  <h1>Data Peace</h1>
+</div>
+<div *ngIf="!showUserDetails">
+  <input [(ngModel)]="firstName" placeholder="Search By First Name" class="search">
+  <table class="user_list">
+    <tr>
+      <td>First Name <span class="sortBtn" (click)="sort('firstName')"> &#8693;</span></td>
+      <td>Last Name <span class="sortBtn" (click)="sort('lastName')"> &#8693;</span></td>
+      <td>Company Name <span class="sortBtn" (click)="sort('companyName')"> &#8693;</span></td>
+      <td>City <span class="sortBtn" (click)="sort('city')"> &#8693;</span></td>
+      <td>State <span class="sortBtn" (click)="sort('state')"> &#8693;</span></td>
+      <td>ZIP <span class="sortBtn" (click)="sort('zip')"> &#8693;</span></td>
+      <td>Email <span class="sortBtn" (click)="sort('email')"> &#8693;</span></td>
+      <td>Web <span class="sortBtn" (click)="sort('web')"> &#8693;</span></td>
+      <td>Age <span class="sortBtn" (click)="sort('age')"> &#8693;</span></td>
+    </tr>
+    <tr *ngFor="let userItem of this._state.userDetails | filter : firstName;
+  let i = index" (click)="showDetails(i)"
+      routerLink="user/{{userItem.id}}">
+      <td>{{userItem.first_name}}</td>
+      <td>{{userItem.last_name}}</td>
+      <td>{{userItem.company_name}}</td>
+      <td>{{userItem.city}}</td>
+      <td>{{userItem.state}}</td>
+      <td>{{userItem.zip}}</td>
+      <td>{{userItem.email}}</td>
+      <td><a href="{{userItem.web}}">{{userItem.web}}</a></td>
+      <td>{{userItem.age}}</td>
+    </tr>
+  </table>
+
+  <div class="fix">
+    <button class="previousBtn" (click)="previous()" *ngIf="this._state.page_number > 1">Previous</button>
+    <button class="nextBtn" (click)="next()" *ngIf="this._state.page_number > 0">Next</button>
+  </div>
+
+
+</div>

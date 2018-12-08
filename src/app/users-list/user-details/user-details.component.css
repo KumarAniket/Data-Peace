@@ -1,0 +1,20 @@
+.header {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: black;
+}
+.user_details {
+    cursor: pointer;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.user_details td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user_details tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

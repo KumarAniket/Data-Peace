@@ -1,0 +1,15 @@
+.navbar {
+    width: 100%;
+    left: 0;
+    top : 0;
+    height: 50px;
+    position: fixed;
+    background-color: #b2e2f3;
+    cursor: pointer;
+}
+.navbar h1 {
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px; 
+}

@@ -1,0 +1,65 @@
+.previousBtn {
+    cursor: pointer;
+    background-color: white;
+    color: #428bca;
+    padding: 10px;
+    margin-left: 15%;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    outline: none;
+}
+
+.nextBtn {
+    cursor: pointer;
+    background-color: white;
+    color: #428bca;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    margin-left: 40%;
+    outline: none;
+}
+
+.sortBtn {
+    cursor: pointer;
+}
+
+.user_list{
+    margin : 10% 0% 3% 10%;
+    cursor: pointer;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.user_list td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user_list tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.fix {
+    width: 100%;
+    height: auto;
+}
+.search{
+    margin: 10% 10% 0% 10%;
+}
+.navbar {
+    width: 100%;
+    left: 0;
+    top : 0;
+    height: 50px;
+    position: fixed;
+    background-color: #b2e2f3;
+}
+.navbar h1 {
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px; 
+}
